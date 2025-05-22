@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    background-color: hsl(30, 54%, 90%);
+    color: hsl(24, 5%, 18%);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 100%);
+    max-width: 375px;
+}
+
+.content {
+    padding: 2rem;
+}
+
+main img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h1,
+h2 {
+    font-family: 'Young Serif', serif;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+h2 {
+    color: hsl(14, 45%, 36%);
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-left: 0;
+}
+
+p,
+ul,
+ol {
+    color: hsl(30, 10%, 34%);
+    margin-top: 1rem;
+
+}
+
+ul,
+ol {
+    margin-left: 1.5rem;
+}
+
+ul li,
+ol li {
+    line-height: 1.5rem;
+    margin-bottom: 10px;
+    padding-inline-start: 10px;
+}
+
+ul li::marker,
+ol li::marker {
+    color: hsl(14, 45%, 36%);
+    font-weight: 600;
+}
+
+.prep-time {
+    background-color: hsl(330, 100%, 98%);
+    padding: 30px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.prep-time h2 {
+    color: hsl(332, 51%, 32%);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.prep-time li::marker {
+    color: hsl(332, 51%, 32%);
+}
+
+section strong {
+    font-weight: 700;
+}
+
+.nutrition table {
+    width: 100%;
+    margin-top: 1rem;
+
+}
+
+.nutrition table td {
+    padding: 0.7rem 2rem;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.nutrition table strong {
+    color: hsl(14, 45%, 36%);
+}
+
+.ingredients,
+.instructions {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+@media (min-width: 376px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem 1rem;
+    }
+
+    main {
+        max-width: 736px;
+        border-radius: 20px;
+        padding: 2rem;
+    }
+
+    main img {
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+    }
+
+    main .content {
+        padding-inline: 0;
+    }
+}
